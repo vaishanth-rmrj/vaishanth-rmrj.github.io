@@ -3189,7 +3189,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 23em;
+				width: 300px;
 				-moz-transform: translateX(60em);
 				-webkit-transform: translateX(60em);
 				-ms-transform: translateX(60em);
@@ -3256,17 +3256,17 @@ input, select, textarea {
 				}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-20.5em);
-				-webkit-transform: translateX(-20.5em);
-				-ms-transform: translateX(-20.5em);
-				transform: translateX(-20.5em);
+				-moz-transform: translateX(-290px);
+				-webkit-transform: translateX(-290px);
+				-ms-transform: translateX(-290px);
+				transform: translateX(-290px);
 			}
 
 			body.header-visible #header {
-				-moz-transform: translateX(15em);
-				-webkit-transform: translateX(15em);
-				-ms-transform: translateX(15em);
-				transform: translateX(15em);
+				-moz-transform: translateX(100px);
+				-webkit-transform: translateX(100px);
+				-ms-transform: translateX(100px);
+				transform: translateX(100px);
 			}
 
 
