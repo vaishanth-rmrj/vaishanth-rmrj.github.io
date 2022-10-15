@@ -2710,7 +2710,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 30em;
+		width: 23em;
 		left: 0;
 	}
 
@@ -2745,7 +2745,7 @@ input, select, textarea {
 			#header > header .avatar {
 				display: block;
 				margin: 0 0 2.25em auto;
-				width: 15em;
+				width: 10em;
 			}
 
 			#header > header h1 {
@@ -2822,7 +2822,7 @@ input, select, textarea {
 
 	#wrapper {
 		background: #fff;
-		padding-left: 10em;
+		padding-left: 23em;
 	}
 
 /* Main */
@@ -2830,9 +2830,16 @@ input, select, textarea {
 	#main > section {
 		border-top: solid 6px #f4f4f4;
 	}
+		#main > #one {
+			background-image: url("/images/umd_campus_pic_blured.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
 
 		#main > section > .container {
 			padding: 6em 0 4em 0;
+			
 		}
 
 		#main > section:first-child {
@@ -2900,7 +2907,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 21em;
+				padding-left: 21em;
 			}
 
 		/* Main */
@@ -2930,7 +2937,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 20em;
+				padding-left: 20em;
 			}
 
 	}
@@ -2985,11 +2992,12 @@ input, select, textarea {
 				top: 0;
 				width: 23em;
 				z-index: 10002;
-				-moz-transform: translateX(23em);
-				-webkit-transform: translateX(23em);
-				-ms-transform: translateX(23em);
-				transform: translateX(23em);
+				-moz-transform: translateX(60em);
+				-webkit-transform: translateX(60em);
+				-ms-transform: translateX(60em);
+				transform: translateX(60em);
 				right: 0;
+				text-align: left;
 			}
 
 				#header > footer {
@@ -3013,6 +3021,7 @@ input, select, textarea {
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				padding: 44px 0 1px 0;
+				/* padding-left: 23em; */
 			}
 
 		/* Header Panel */
@@ -3101,10 +3110,10 @@ input, select, textarea {
 			}
 
 			body.header-visible #header {
-				-moz-transform: translateX(0);
-				-webkit-transform: translateX(0);
-				-ms-transform: translateX(0);
-				transform: translateX(0);
+				-moz-transform: translateX(35.5em);
+				-webkit-transform: translateX(35.5em);
+				-ms-transform: translateX(35.5em);
+				transform: translateX(35.5em);
 			}
 
 	}
@@ -3180,11 +3189,11 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 17em;
-				-moz-transform: translateX(17em);
-				-webkit-transform: translateX(17em);
-				-ms-transform: translateX(17em);
-				transform: translateX(17em);
+				width: 23em;
+				-moz-transform: translateX(60em);
+				-webkit-transform: translateX(60em);
+				-ms-transform: translateX(60em);
+				transform: translateX(60em);
 				right: 0;
 			}
 
@@ -3208,13 +3217,14 @@ input, select, textarea {
 				#header > footer {
 					padding: 1.5em;
 				}
-
+		
+				
 		/* Main */
 
 			#main > section > .container {
 				padding: 2em 0 0 0;
 			}
-
+		
 		/* Footer */
 
 			#footer {
@@ -3246,11 +3256,19 @@ input, select, textarea {
 				}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-17em);
-				-webkit-transform: translateX(-17em);
-				-ms-transform: translateX(-17em);
-				transform: translateX(-17em);
+				-moz-transform: translateX(-20.5em);
+				-webkit-transform: translateX(-20.5em);
+				-ms-transform: translateX(-20.5em);
+				transform: translateX(-20.5em);
 			}
+
+			body.header-visible #header {
+				-moz-transform: translateX(15em);
+				-webkit-transform: translateX(15em);
+				-ms-transform: translateX(15em);
+				transform: translateX(15em);
+			}
+
 
 	}
 
