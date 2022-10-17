@@ -25,14 +25,16 @@
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#three">Projects</a></li>
 						<li><a href="#two">Work Experience</a></li>
-						<li><a href="#four">Technical Skills</a></li>
+						<li><a href="#four">Achivements</a></li>
+						<li><a href="#five">Resume</a></li>
+						<li><a href="#six">Contact Me</a></li>
 					</ul>
 				</nav>
 				<footer>
 					<ul class="icons">
 						<li><i class="icon brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/vaishanth-ramaraj/" style="font-size: 1em;" target="_blank">  linkedin.com/vaishanth-ramaraj</a> </li>
 						<li><i class="icon brands fa-github"></i><a href="https://www.github.com/vaishanth-rmrj" style="font-size: 1em;" target="_blank">  github.com/vaishanth-rmrj</a></li>
-						<li><i class="icon brands fa-envelope"></i><a href="" style="font-size: 1em;" target="_blank">  vrmrj@gmail.com</a></li>
+						<li><i class="icon brands fa-envelope"></i><a href="" style="font-size: 1em;" target="_blank"> vrmrj@gmail.com</a></li>
 					</ul>
 				</footer>
 			</section>
@@ -47,9 +49,21 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Hey folks !!!</h2>
-										<p style="color: white;">I’m currently working on Computer Vision and Machine Learning algorithms. I'm a Graduate student at University of Maryland pursuing Robotics Engineering.</p>
+										<h2>Hey!</h2>
+										<p style="color: white; font-size: 24px;">I'm a Masters Robotics Engineering student at University of Maryland, College Park. I’m currently working on Computer Vision and Machine Learning algorithms.</p>
+										<h4 style="color: white;">Selected Coursework</h3>
+										<ul style="list-style: none;">
+											<li style="color: white;">Perception and Planning for robotics, Foundations of Deep Learning and ML, Robot
+												modeling, ROS software development in Cpp and Python, and Basic Control systems.</li>
+										</ul>
 									</header>
+									<h4 style="color: white;">Technical Skills</h3>
+									<ul style="list-style: none;">
+										<li style="color: white;">Programming Languages: Python, C++, MATLAB</li>
+										<li style="color: white;">Libraries and Tools: Pytorch, Tensorflow, Sklearn, Pandas, Numpy, ROS, OpenCV, Git, Docker, Django, Dart</li>
+										<li style="color: white;">ML Architectures: KNN, SVM, Softmax, Multilayer Perceptron, CNN, YOLO, Transformers, RAFT</li>
+										<li style="color: white;">Other Tools: SolidWorks, AutoCAD</li>
+									</ul>
 								</div>
 							</section>
 
@@ -57,76 +71,112 @@
 							<section id="three">
 								<div class="container">
 									<h3>My Projects</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<p>I have been working on Computer Vision and Machie Learning algorithms. My projects are divided into the following:</p>
+									
+									<!-- machine learning projects -->
+									<h3>Machine Learning</h3>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/covid_violator.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>COVID19 Social Distancing Violation Detector</h4>
-												<p>Implemented YOLOv5 in pytorch to detect people crowding in public areas to indicate high risk of COVID-19 exposure with a real time performance of 45 FPS.</p>
+												<p>Implemented YOLOv5 in pytorch to detect people crowding in public
+													areas to indicate high risk of COVID-19 exposure with a real time performance of 
+													45 FPS which is 2.5 times faster than Faster-RCNN and has more than 
+													90 percent accuracy is achieved.</p>
+												<a href="https://github.com/vaishanth-rmrj/COVID19-Social-Distancing-Violation-Detector-Using-YOLOv5" target="_blank">GitHub</a>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/tranformers_nlp.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Product review analysis using Trasformers</h4>
-												<p>Implemented NLP using Transformers to analyze the product reviews on	Amazon to provide recomendation to the user to make an informed decision.</p>
+												<p>Provided Amazon product recomendation using Transformers
+													(Pytorch) trained on 70,0000 product reviews fetched using Webscraping for the user to make an informed
+													decision.</p>
+												<a href="https://github.com/vaishanth-rmrj/Web-Scraping-And-Contextual-Analysis-of-Reviews" target="_blank">GitHub</a>
+												
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/image_classification.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Image Classification</h4>
-												<p>Implemented image classification using KNN, SVM, Softmax, Multi-layer Perceptron, Convolutional Neural Network to classify images into 10 classes.</p>
+												<p> Implemented image classification on 60,000 CIFAR-10 image datasets to classify images into
+													10 classes using KNN(27% acc), SVM(36% acc), Softmax(37% acc), Multi-layer Perceptron(51% acc),
+													Convolutional Neural Network(78% acc)(Both Pytorch and Tensorflow Implementation.</p>
+												
+												<a href="https://github.com/vaishanth-rmrj?tab=repositories" target="_blank">GitHub</a>
+													
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/water_level_detection.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Water level detection for Ship hull</h4>
-												<p> Using the RAFT algorithm to estimate the optical flow of the water and using OpenCV library to perform image processing to detect its level on the ship hull using a single RGB camera.</p>
+												<p> Estimated water level on ship hull upto 10 meters using RAFT
+													(Pytorch) algorithm (estimate the optical flow of water) and OpenCV library (perform post image processing)
+													which performed 2 times faster than conventional optical flow providing consistent 30 FPS only using single RGB
+													camera data.</p>
+												<a href="https://github.com/vaishanth-rmrj/Water-Level-Detection-for-Ship-Hull-RAFT-Implementation" target="_blank">GitHub</a>
+												
 											</div>
 										</article>
+
+										<!-- machine learning projects -->
+										<h3>Computer Vision</h3>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/3d_object_projection.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>3D Object Projection on a Video (Augmented Reality</h4>
-												<p>OpenCv library is used without inbuilt functions to project a Simple 3D Object onto a video by computing its Projection Matrix.</p>
+												<p>OpenCv library is used without inbuilt functions to project a Simple 3D Object 
+													onto a video by computing its Projection Matrix.</p>
+												<a href="https://github.com/vaishanth-rmrj/Augmented-Reality-3DObject-Projection-On-Video" target="_blank">GitHub</a>
+												
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/image_stitching.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Image Stitching Using SIFT</h4>
-												<p> Implemented using SIFT algorithm in OpenCV to stitch two images together based on features detected on the images without inbuilt functions and only feature detector.</p>
+												<p> Implemented using SIFT algorithm in OpenCV to stitch two images together based 
+													on features detected on the images without inbuilt functions and only feature detector.</p>
+													<a href="">GitHub</a>
+												
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/lane_detection.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Lane Detection and Turn Prediction</h4>
-												<p>  Detected lanes using curve fitting approach and estimated road curvature</p>
+												<p>  Detected road lanes using Homography and sliding window approach in
+													real-time at 40 FPS and made turn predictions based on the curvature of the road with an error rate less than 10%.</p>
+												<a href="">GitHub</a>
+
 											</div>
 										</article>
+
+										<!-- machine learning projects -->
+										<h3>Robotics</h3>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Depth using stereo vision</h4>
-												<p>Estimated pixel-wise depth using a sliding window approach.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/rrt_image.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Robot Path Planning</h4>
-												<p> Implemented BFS, DFS, Dijkstra, A*, RRT, RRT* and bi-RRT for holonomic and non-holonomic robots.</p>
+												<p> : Demostrated path planning for holonomic and non-holonomic robots in simulation using
+													python implementation of BFS, DFS, Dijkstra, A*, RRT, RRT* and bi-RRT algorithms .</p>
+												<a href="https://github.com/vaishanth-rmrj?tab=repositories" target="_blank">GitHub</a>
+
+
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/project_images/slam_navigation.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>SLAM Navigation for Search and Rescue</h4>
-												<p> Implemented SLAM navigation on Turtlebot3 using ROS. It was simulated in Gazebo to look for Aruco markers (i.e People) and locate it inside the local map.</p>
+												<p> Implemented SLAM navigation on Turtlebot3 using ROS. It was simulated in Gazebo to look 
+													for Aruco markers (i.e People) and locate it inside the local map.</p>
+												<a href="https://github.com/vaishanth-rmrj/SLAM-Robot-Navigation-for-Search-And-Rescue" target="_blank">GitHub</a>
+
 											</div>
 										</article>
 									</div>
@@ -140,48 +190,60 @@
 									<h4>Children's National Hospital</h4>
 
 									<ul>
-										<li>An inexpensive, compact, modular navigation system was designed and developed to provide autonomous
-											functionality to a powered wheelchair.</li>
-										<li>Real-Time Appearance Based Mapping package, running on ROS is used to perform visual SLAM that allows mapping
-											and localizing using a single Realsense camera, and path planning is performed by the move base package.</li>
-										<li>A journal paper "Development of a Modular Real-time Shared-control System for a Smart Wheelchair" was submitted
-											to Journal of Signal Processing Systems.</li>	
+										<li>Designed and developed an inexpensive(< 700USD), compact (6in x 4in x 3in), modular navigation system to
+											provide autonomous functionality for a powered wheelchair using Jetson Nano and Realsense Camera.</li>
+										<li>Executed visual SLAM for mapping and localization using RTABmap’s ROS package and real-time path
+											planning is executed using move base package at an average 35FPS with less than 10W power consumption.</li>
+										<li>Submitted a journal paper to Journal of Signal Processing Systems named "Development of a Modular
+											Real-time Shared-control System for a Smart Wheelchair".</li>	
 									</ul>
 
 									<h4>Bariflo Labs Private LTD</h4>
-
 									<ul>
-										<li>Developed ROS on Raspberry Pi for controlling a Water Aeration Robot remotely.</li>
-										<li>Data was fetched from the onboard sensors and updated on the cloud in real time for further analysis.</li>
+										<li>Developed ROS package on Raspberry Pi for remotely controlling a Water Aeration Robot using onboard WiFi
+											with a range of 20 meters.</li>
+										<li>Environmental data was fetched from the attached sensors at every 10 seconds, which then processed using
+											Regression algorithms on the cloud with latency of 160ms to trigger the aeration process.</li>
 									</ul>
 
 									<h4>National Institute of Ocean Technology</h4>
-
 									<ul>
 										<li>Worked on a soft gripper project in National Institue of Ocena Technology (NIOT), Chennai, India. The project involves the design and complete fabrication of the soft gripper including the electronic components. Objective is to grasp delicate parts underwater during ocean exploration activities.</li>
 									</ul>
-
-									<!-- <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul> -->
 								</div>
 							</section>
 
-						
+						<!-- Four -->
+						<section id="four">
+							<div class="container">
+								<h3>Achivements & Extracurricular Activities</h3>
+								<h4>Published Gedrag Organisatie paper "Design and Development of Spherical Robot" - 2020</h4>
+								<h4>Event Coordinator in English Proficiency and Readers Club (2018 - 2019).</h4>
+								<h4>Executive member in Robotics Club (2017 - 2018).</h4>
+							</div>
+						</section>
 							
 
-						<!-- Four -->
-							<section id="four">
+						<!-- five -->
+							<section id="five">
 								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
+									<h3>My Resume</h3>
+									<img src="images/Vaishanth_Ramaraj_CV.jpg" width="90%" alt="" />
+									<a  href="assets/resume/Vaishanth_Ramaraj_CV.pdf" download style="margin-top: 50px; margin-bottom: 50px;">Download as pdf   <i class="icon solid fa-download"></i></a>
+									
+								</div>
+							</section>
+						
+							<!-- five -->
+							<section id="six">
+								<div class="container">
+									<h3>Contact Me </h3>
+									<ul style="list-style: none;">
+										<li>Linkedin : <a href="https://www.linkedin.com/in/vaishanth-ramaraj/" target="_blank">linkedin.com/vaishanth-ramaraj</a></li>
+										<li>Email ID: vrmrj@umd.edu</li>
+									</ul>
+									<p>Feel free to leave a message below.</p>
+									<form action="https://getform.io/f/d91e5fb6-92e2-4974-b17d-3806be659787" method="POST">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -198,347 +260,16 @@
 								</div>
 							</section>
 
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
-
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
-
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
-
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
-
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
-
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						-->
-
 					</div>
 
 				<!-- Footer -->
-					<section id="footer">
+					<!-- <section id="footer">
 						<div class="container">
 							<ul class="copyright">
 								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
-					</section>
+					</section> -->
 
 			</div>
 
