@@ -18,13 +18,13 @@
 				<header>
 					<span class="image avatar"><img src="images/profile_pic.jpeg" alt="" /></span>
 					<h1 id="logo"><a href="#">Vaishanth Ramaraj</a></h1>
-					<p>A code hungry Robotics engineer pursuing his graduate studies in University of Maryland, College Park</p>
+					<p>A code hungry Robotics engineer graduated from the University of Maryland, College Park</p>
 				</header>
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#three">Projects</a></li>
 						<li><a href="#two">Work Experience</a></li>
+						<li><a href="#three">Projects</a></li>						
 						<li><a href="#four">Achivements</a></li>
 						<li><a href="#five">Resume</a></li>
 						<li><a href="#six">Contact Me</a></li>
@@ -34,7 +34,7 @@
 					<ul class="icons">
 						<li><i class="icon brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/vaishanth-ramaraj/" style="font-size: 1em;" target="_blank">  linkedin.com/vaishanth-ramaraj</a> </li>
 						<li><i class="icon brands fa-github"></i><a href="https://www.github.com/vaishanth-rmrj" style="font-size: 1em;" target="_blank">  github.com/vaishanth-rmrj</a></li>
-						<li><i class="icon brands fa-envelope"></i><a href="" style="font-size: 1em;" target="_blank"> vrmrj@gmail.com</a></li>
+						<li><i class="icon brands fa-envelope"></i><a href="" style="font-size: 1em;" target="_blank"> vrmrj@umd.edu</a></li>
 					</ul>
 				</footer>
 			</section>
@@ -50,22 +50,65 @@
 								<div class="container">
 									<header class="major">
 										<h2 style="color: white;">Hey!</h2>
-										<p style="color: white; font-size: 24px;">I'm a Masters Robotics Engineering student at University of Maryland, College Park. I’m currently working on Computer Vision and Machine Learning algorithms.</p>
-										<h4 style="color: white;">Selected Coursework</h3>
-										<ul style="list-style: none;">
-											<li style="color: white;">Perception and Planning for robotics, Foundations of Deep Learning and ML, Robot
-												modeling, ROS software development in Cpp and Python, and Basic Control systems.</li>
-										</ul>
+										<p style="color: white; font-size: 20px;">I'm a Masters Robotics Engineering Graduate from the University of Maryland, College Park. I’m currently working on Computer Vision and Machine Learning algorithms.</p>
 									</header>
 									<h4 style="color: white;">Technical Skills</h3>
 									<ul style="list-style: none;">
-										<li style="color: white;">Programming Languages: Python, C++, MATLAB</li>
-										<li style="color: white;">Libraries and Tools: Pytorch, Tensorflow, Sklearn, Pandas, Numpy, ROS, OpenCV, Git, Docker, Django, Dart</li>
-										<li style="color: white;">ML Architectures: KNN, SVM, Softmax, Multilayer Perceptron, CNN, YOLO, Transformers, RAFT</li>
-										<li style="color: white;">Other Tools: SolidWorks, AutoCAD</li>
+										<li style="color: white;">Programming Languages: Python, C++</li>
+										<li style="color: white;">Libraries and Tools: PyTorch, Sklearn, Pandas, Numpy, OpenCV, Git, Docker, Tensorflow, ROS, SolidWorks</li>
+										<li style="color: white;">ML Architectures: KNN, SVM, Softmax, MLP, CNN, YOLO, Transformers(BERT, LSTM), RAFT</li>
 									</ul>
 								</div>
 							</section>
+
+						<!-- Two -->
+						<section id="two">
+							<div class="container">
+								<h3>Work Experience</h3>
+								<h4>Children's National Hospital</h4>
+
+								<ul>
+									<li>Led a team to develop a modular autonomous navigation system for a powered wheelchair.</li>
+									<li>Designed and developed end-to-end pipelines for mapping and localization using ROS, PyTorch, RTabmap and
+										OpenCV with real-time performance of 35 FPS.</li>
+									<li>Tested the software system in the Gazebo simulation with a dense environment to validate the system’s integrity.</li>	
+									<li>Deployed the system using ARM-based docker container on Jetson Nano with Intel RealSense stereo camera and
+										ESP32, resulting in 52% cost savings and less than 10W power consumption.</li>	
+
+									<li>Developed a real-time object detection system for smart wheelchair using YOLOv5 and Point Cloud algorithms for
+										obstacle avoidance.</li>
+										
+									<li> A lightweight KIVY framework GUI for touch navigation was implemented, for a user-friendly and intuitive control
+										interface.</li>
+									
+									<li>Published a journal paper to Journal of Signal Processing Systems named "Development of a Modular
+										Real-time Shared-control System for a Smart Wheelchair".</li>	
+								</ul>
+								
+								<center>
+									<iframe src="https://drive.google.com/file/d/1ZZ4hkyBrReRB3SjlFMf8BwoT-uJ2s0Qt/preview" width="640" height="480" allow="autoplay"></iframe>
+								</center>	
+
+								<h4>Bariflo Labs Private LTD</h4>
+								<ul>
+									<li>Worked with a team of engineers to build a robust software system to remotely control Water Aeration device.</li>
+									<li>Integrated algorithms for environmental data capture using sensors to collect water quality data every 10 seconds
+										and perform regression algorithm analysis on the cloud with a latency of 160ms.</li>
+									<li>Deployed the system on Raspberry Pi with remote operation implementation using onboard WiFi.</li>
+								</ul>
+								<h4>National Institute of Ocean Technology</h4>
+								<ul>
+									<li>Led a team to design and fabricate a soft-gripper robotic manipulator prototype using flexible material 3D prints.</li>
+									<li>Designed mechanical linkages for underwater manipulation using SolidWorks. Utilized micro-controllers to create
+										a compact gripper mechanism with a max payload of 500g.</li>
+								</ul>
+
+								<center>
+									<img src="images/softgripper.jpg" width="300" height="250"></img>
+								</center>	
+							</div>
+						</section>
+
 
 						<!-- Three -->
 							<section id="three">
@@ -76,6 +119,15 @@
 									<!-- machine learning projects -->
 									<h3>Machine Learning</h3>
 									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="images/3d_mapping.gif" alt="" /></a>
+											<div class="inner">
+												<h4>Monocular depth estimation and Path planning in partially known environments</h4>
+												<p>Implemented MiDaS using PyTorch for 3D environment construction and performed path planning using D* lite and OpenCV. Achieved 30FPS in simulation and 22FPS in Real-time using Jetson Nano</p>
+												<a href="https://github.com/vaishanth-rmrj/Monocular-Depth-Estimation-and-Path-Planning-in-Partially-Known-Environments" target="_blank">GitHub</a>
+											</div>
+										</article>
+
 										<article>
 											<a href="#" class="image"><img src="images/project_images/covid_violator.jpg" alt="" /></a>
 											<div class="inner">
@@ -183,41 +235,16 @@
 								</div>
 							</section>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Work Experience</h3>
-									<h4>Children's National Hospital</h4>
-
-									<ul>
-										<li>Designed and developed an inexpensive(< 700USD), compact (6in x 4in x 3in), modular navigation system to
-											provide autonomous functionality for a powered wheelchair using Jetson Nano and Realsense Camera.</li>
-										<li>Executed visual SLAM for mapping and localization using RTABmap’s ROS package and real-time path
-											planning is executed using move base package at an average 35FPS with less than 10W power consumption.</li>
-										<li>Submitted a journal paper to Journal of Signal Processing Systems named "Development of a Modular
-											Real-time Shared-control System for a Smart Wheelchair".</li>	
-									</ul>
-
-									<h4>Bariflo Labs Private LTD</h4>
-									<ul>
-										<li>Developed ROS package on Raspberry Pi for remotely controlling a Water Aeration Robot using onboard WiFi
-											with a range of 20 meters.</li>
-										<li>Environmental data was fetched from the attached sensors at every 10 seconds, which then processed using
-											Regression algorithms on the cloud with latency of 160ms to trigger the aeration process.</li>
-									</ul>
-
-									<h4>National Institute of Ocean Technology</h4>
-									<ul>
-										<li>Worked on a soft gripper project in National Institue of Ocena Technology (NIOT), Chennai, India. The project involves the design and complete fabrication of the soft gripper including the electronic components. Objective is to grasp delicate parts underwater during ocean exploration activities.</li>
-									</ul>
-								</div>
-							</section>
-
+						
 						<!-- Four -->
 						<section id="four">
 							<div class="container">
 								<h3>Achivements & Extracurricular Activities</h3>
-								<h4>Published Gedrag Organisatie paper "Design and Development of Spherical Robot" - 2020</h4>
+								<h4>Ramaraj, V., Paralikar, A., Lee, E. et al. Development of a Modular Real-time Shared-control System for a Smart
+									Wheelchair. J Sign Process Syst (2023). </h4>
+								<h4>Krishnamurthy, K., Meenakshipriya, B., Shree, K.I., Vaishanth, R., Sandeep, V. and Vijay, V.P., ”Design and
+									Development of Spherical Robot Using Pendulum Mechanism”, 2020. Link
+									</h4>
 								<h4>Event Coordinator in English Proficiency and Readers Club (2018 - 2019).</h4>
 								<h4>Executive member in Robotics Club (2017 - 2018).</h4>
 							</div>

@@ -1709,7 +1709,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4.5em);
-		width: 45em;
+		width: 55em;
 	}
 
 		.container.xsmall {
@@ -2739,13 +2739,13 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 3em;
+			padding: 15px;
 		}
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 0 2.25em auto;
-				width: 10em;
+				margin: 0 0 10px auto;
+				width: 150px;
 			}
 
 			#header > header h1 {
@@ -2757,6 +2757,7 @@ input, select, textarea {
 				color: #d2f2e9;
 				font-style: italic;
 				margin: 1em 0 0 0;
+				font-size: 16px;
 			}
 
 		#header > footer {
@@ -2777,6 +2778,7 @@ input, select, textarea {
 
 				#header > footer .icons li a {
 					color: #b7eadc;
+					font-size: 14px!important;
 				}
 
 		#header > nav {
@@ -2805,7 +2807,7 @@ input, select, textarea {
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.85em 3em;
+						padding: 5px 20px;
 						text-decoration: none;
 					}
 
@@ -2838,7 +2840,7 @@ input, select, textarea {
 		}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 30px 0 20px 0;
 			
 		}
 
@@ -2897,7 +2899,7 @@ input, select, textarea {
 			}
 
 				#header > header {
-					padding: 2em;
+					padding: 15px;
 				}
 
 				#header > footer {
@@ -2913,7 +2915,7 @@ input, select, textarea {
 		/* Main */
 
 			#main > section > .container {
-				padding: 4em 0 2em 0;
+				padding: 20px 0 10px 0;
 			}
 
 	}
