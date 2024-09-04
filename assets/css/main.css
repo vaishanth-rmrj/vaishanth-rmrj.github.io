@@ -18,7 +18,7 @@
  *  10. intro
  *  11. about
  *  12. resume
- *  13. portfolio
+ *  13. projects
  *  14. call-to-action section
  *  15. services
  *  16. stats
@@ -346,6 +346,19 @@ th:last-child, td:last-child {
 .table-responsive {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
+}
+
+.rounded-pill {
+	margin: 2.5px;
+    padding: 1px 10px;
+    border: 2px solid #3498db;
+    border-radius: 50px;
+    color: #3498db;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
 }
 
 /**
@@ -1035,14 +1048,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .section-intro h1 {
 	font-family: "poppins-semibold", serif;
-	font-size: 3.6rem;
+	font-size: 2.6rem;
 	color: #313131;
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
 	color: #F44336;
-	font-size: 1.6rem;
+	font-size: 3.0rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
@@ -1565,6 +1578,32 @@ header .logo a {
 	margin-right: 4rem;
 }
 
+#about .skills-content {
+	/* margin-left: 25%; */
+	/* padding-left: 60px; */
+	/* text-align: center; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;	
+}
+#about .skills-content h4 {
+	position: relative;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	margin-bottom: 1.2rem;
+}
+#about .skills-content h4::after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 60px;
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 30%;
+	bottom: 0;
+}
+
 /**
  * responsive:
  * about
@@ -1631,6 +1670,7 @@ header .logo a {
 }
 #resume .resume-header h2 {
 	color: #F44336;
+	font-size: 3.0rem;
 }
 
 #resume .resume-timeline {
@@ -1783,24 +1823,37 @@ header .logo a {
 	}
 }
 
-
 /** 
  * ===================================================================
- * 13. portfolio - (_layout.scss)
+ * 13. publication - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
-#portfolio {
+#publication {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 6rem;
+	padding-bottom: 0rem;
 }
-#portfolio .folio-item {
+
+
+
+/** 
+ * ===================================================================
+ * 13. projects - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+#projects {
+	background: #FFFFFF;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+#projects .folio-item {
 	padding: 0;
 	position: relative;
 	overflow: hidden;
 }
-#portfolio .folio-item img {
+#projects .folio-item img {
 	vertical-align: middle;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -1809,7 +1862,7 @@ header .logo a {
 	transition: all 0.5s ease-in-out;
 }
 
-#portfolio .overlay {
+#projects .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1823,12 +1876,12 @@ header .logo a {
 	transition: all 0.5s ease-in-out;
 }
 
-#portfolio .folio-item-table {
+#projects .folio-item-table {
 	display: table;
 	width: 100%;
 	height: 100%;
 }
-#portfolio .folio-item-cell {
+#projects .folio-item-cell {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -1841,13 +1894,13 @@ header .logo a {
 	left: -100%;
 }
 
-#portfolio .folio-title {
+#projects .folio-title {
 	color: #FFFFFF;
 	font-size: 1.3rem;
 	padding: 0 3rem;
 	margin-bottom: 0;
 }
-#portfolio .folio-types {
+#projects .folio-types {
 	margin: 0;
 	padding: 0 3rem;
 	text-transform: uppercase;
@@ -1856,13 +1909,13 @@ header .logo a {
 	letter-spacing: .1rem;
 	color: rgba(255, 255, 255, 0.6);
 }
-#portfolio .folio-item:hover .overlay {
+#projects .folio-item:hover .overlay {
 	background: rgba(0, 0, 0, 0.8);
 }
-#portfolio .folio-item:hover .folio-item-cell {
+#projects .folio-item:hover .folio-item-cell {
 	left: 0;
 }
-#portfolio .folio-item:hover img {
+#projects .folio-item:hover img {
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
@@ -1870,21 +1923,21 @@ header .logo a {
 
 /**
  * responsive:
- * portfolio
+ * projects
  * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
-	#portfolio .folio-title {
+	#projects .folio-title {
 		font-size: 3.1rem;
 	}
 }
 @media only screen and (max-width:768px) {
-	#portfolio .folio-title {
+	#projects .folio-title {
 		font-size: 2.5rem;
 	}
 }
 @media only screen and (max-width:400px) {
-	#portfolio .folio-title {
+	#projects .folio-title {
 		font-size: 2.2rem;
 	}
 }
