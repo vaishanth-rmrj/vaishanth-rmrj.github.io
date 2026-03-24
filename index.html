@@ -198,7 +198,7 @@
 
    			<div class="timeline-wrap">
 
-				<div class="timeline-block">
+				<!-- <div class="timeline-block">
 
 					<div class="timeline-ico">
 						<i class="fa fa-briefcase"></i>
@@ -223,7 +223,7 @@
 					
 					</div>
 
-				</div> <!-- /timeline-block -->
+				</div> /timeline-block -->
 
 				<div class="timeline-block">
 
@@ -233,7 +233,7 @@
 
 					<div class="timeline-header">
 						<h3>Robotics Software Engineer</h3>
-						<p>Dec 2023 - Aug 2024</p>
+						<p>Dec 2023 - Present</p>
 					</div>
 
 					<div class="timeline-content">
@@ -252,39 +252,38 @@
 							<div class="rounded-pill">Jetson AGX Xavier</div>					
 						</div>	
 
-						<h5>Visual Navigation Deep Learning Model for Zero-Shot, Robot-Independent Navigation</h5>
-						<ul>							
-						
-							<li>Developed an end-to-end navigation model using transformers and diffusion networks to enable
-								navigation via RGB camera feed, designed to work on different mobile robots regardless of their physical
-								attributes.</li>
-							<li>The goal-conditioned model can navigate to the target without reliance on additional sensors for 3D scene
-								reconstruction, thereby significantly reducing the overall cost and increasing reliability in the field.</li>
-							<li>Utilized a large open-source dataset to train the model on human navigational strategies, enhancing its ability to
-								adapt to new environments and lowering the cost of collecting new training datasets.</li>
-						
-						</ul>
-						
-						<h5>Robotics Simulation for 7-Axis Manipulator and Mobile Robot Base</h5>
+						<h5>Real-Time Streaming and Data Infrastructure</h5>
 						<ul>
-						<li>Developed realistic custom simulation environments in Isaac Sim, integrating soft-body and rigid-body physics to
-							create interactions nearly indistinguishable from real-world scenarios, thereby reducing the dependency on
-							real-world testing.</li>
-						<li>Integrated a custom 7-Axis manipulator and custom gripper with intricate linear and revolute joints, implemented
-							along with Omnigraph ROS nodes for motion control using our developed ROS stack.</li>
-						<!-- <li>Developed a Python Omnigraph node for dynamic spawning of objects with fine control over its attributes, thus
-							enabling faster testing of robot’s capabilities in different setups.</li> -->
+							<li>Designed and implemented a low-latency, Rust-based pipeline for real-time streaming, synchronization, and recording of multi-camera and multi-sensor data, leveraging NVIDIA hardware-accelerated video encoding, achieving a low memory footprint and approximately 5% CPU utilization on a Jetson Xavier.</li>
+							<li>Developed a data generation pipeline using SAM3 video tracking to expand labeled datasets by tracking objects across frames, enabling dataset scaling with less manual annotation and accelerating model deployment in new environments.</li>
+							<li>Enhanced the host-level monitoring system on Jetson Xavier to execute multi-layered action commands, resulting in a 60% reduction in CPU load.</li>
 						</ul>
-						<h5>Real-Time Segmentation Networks</h5>
+
+						<h5>7-Axis Manipulator</h5>
 						<ul>
-						<li>Implemented real-time three-branch deep learning segmentation network (PIDNet) to detect greenhouse specific
-							objects to help navigate inside compact farm rows.</li>
-						<li>Developed a greenhouse simulation environment in Isaac Sim to collect semantic segmentation datasets using
-							synthetic data generation tools, significantly reducing the need for manual dataset labeling and decreasing the
-							time required to collect and train the model.</li>
-						<!-- <li>Integrated mobile robot base in Isaac sim along with the ROS nodes for motion control using our developed ROS
-							stack to evaluate PIDNet’s performance and reliability, hence reducing testing cost in a real greenhouse farm.</li>
-						</ul> -->
+							<li>Developed incremental enhancements to a 7-axis manipulator calibration system by integrating external tracking measurements and optimizing URDF kinematic parameters to improve end-effector pose accuracy.</li>
+							<li>Implemented a time-parameterization algorithm for a 7-axis manipulator to enable smooth and reliable trajectory execution, computing parameterized trajectories in <= 10 ms under complex trajectory conditions and reducing overall trajectory execution time by 2-4 seconds.</li>
+						</ul>
+
+						<h5>Object Detection Model</h5>
+						<ul>
+							<li>Integrated architectural enhancements into an existing multi-head object detection network by introducing an additional detection head, improving feature representation and enabling more consistent and accurate object localization and classification.</li>
+							<li>Implemented a 3-branch semantic segmentation network for real-time object detection during navigation with clear mask boundaries.</li>
+						</ul>
+
+						<h5>Isaac Sim</h5>
+						<ul>
+							<li>Integrated a custom mobile manipulator with a 7-axis manipulator in Isaac Sim with ROS communications using OmniGraph nodes.</li>
+							<li>Designed and developed a custom simulation environment replicating greenhouse fruit farms, integrating deformable physics into fruit models to realistically emulate gripper-fruit interactions during robotic manipulation tasks.</li>
+							<li>Implemented a pipeline using Isaac Sim tools to generate synthetic semantic segmentation datasets, significantly reducing reliance on manual labeling and decreasing overall data annotation time.</li>
+							<li>Developed OmniGraph nodes for procedurally generating partial simulation environments, such as dynamic spawning of objects, and facilitating faster testing of robotic capabilities across diverse experimental setups.</li>
+						</ul>
+
+						<h5>End-to-End Navigation Model</h5>
+						<ul>
+							<li>Developed an end-to-end vision-based navigation model using Transformers and diffusion policies, enabling mobile robot navigation from monocular camera input while supporting platform-agnostic deployment.</li>
+							<li>Utilized a large open-source dataset to train the model on human navigational strategies, enhancing its ability to adapt to new environments and lowering the cost of collecting new training datasets.</li>
+						</ul>
 					</div>
 
 				</div> <!-- /timeline-block -->
@@ -371,7 +370,7 @@
 						</div>
 						<ul>
 							<li>Developed a ROS-based automation system for a Water Aeration Device, reducing manual intervention.</li>
-							<li>IDesigned and deployed a Random Forest regression model on the cloud to analyze real-time sensor data with
+							<li>Designed and deployed a Random Forest regression model on the cloud to analyze real-time sensor data with
 								160ms latency, ensuring 89% accuracy in aeration control predictions</li>
 							<li>Integrated an ESP32-based Wi-Fi controller with a mobile application using MQTT and RESTful APIs, enabling
 								remote monitoring and real-time control, reducing on-site maintenance costs by 40%.</li>
@@ -679,7 +678,7 @@
 					</div>
 				</div>    -->
 
-				<div class="bgrid folio-item">
+				<!-- <div class="bgrid folio-item">
 					<div class="item-wrap">
 						<img src="images/project_images/lane_detection.jpg" alt="">
 						<a href="https://vaishanth-rmrj.github.io/" class="overlay">
@@ -693,7 +692,7 @@
 							</div>                    
 						</a>
 					</div>
-				</div> <!-- /folio-item -->  
+				</div> /folio-item   -->
 
 				<div class="bgrid folio-item">
 					<div class="item-wrap">
@@ -711,7 +710,7 @@
 					</div>
 				</div> <!-- /folio-item -->  
 
-				<div class="bgrid folio-item">
+				<!-- <div class="bgrid folio-item">
 					<div class="item-wrap">
 						<img src="images/project_images/slam_navigation.jpg" alt="">
 						<a href="https://github.com/vaishanth-rmrj/SLAM-Robot-Navigation-for-Search-And-Rescue" class="overlay">
@@ -725,7 +724,7 @@
 							</div>                    
 						</a>
 					</div>
-				</div> <!-- /folio-item -->  
+				</div> /folio-item   -->
 	         </div> <!-- /portfolio-wrapper --> 
 
    		</div>  <!-- /twelve -->   
@@ -752,18 +751,18 @@
 
    	<div class="row contact-info">
 
-   		<div class="col-six tab-full collapse">
+   		<div class="tab-full collapse">
 
    			<div class="icon">
    				<i class="icon-mail"></i>
    			</div>
 
    			<h5>Email Me At</h5>
-   			<p>vaishanth.rmrj@gmail.com</p>
+   			<p>vaishanth.ramaraj.98@gmail.com</p>
 
    		</div>
 
-   		<div class="col-six tab-full">
+   		<!-- <div class="col-six tab-full">
 
    			<div class="icon">
    				<i class="icon-phone"></i>
@@ -772,7 +771,7 @@
    			<h5>Call Me At</h5>
    			<p>Mobile: (+240) 413 1281</p>
 
-   		</div>
+   		</div> -->
    		
    	</div> <!-- /contact-info -->
 		
@@ -786,11 +785,11 @@
      	<div class="row">
 
       	<div class="col-eight tab-full">
-	      	<div class="copyright">
+	      	<!-- <div class="copyright">
 		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span> 
 		        	<span>Distributed by <a href="https://themewagon.com/">themewagon</a></span>	         	
 		         </div>		                  
-	      	</div>
+	      	</div> -->
 
 	      	<div id="go-top">
 		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
